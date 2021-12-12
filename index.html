@@ -4,7 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=PT+Serif:ital@1&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Icon to set an alarm-->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Icon to delete an alarm-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- clock is used to show the current time  -->
+    <div class="clock">
+      <img class="dials" src="./images/dialdisc.png" alt="" />
+      <div id="dot"></div>
+      <div id="H" class="hand Hour"></div>
+      <div id="M" class="hand Minute"></div>
+      <div id="S" class="hand Second"></div>
+    </div>
+
+    <h1>SET AN ALARM</h1>
+    <!-- Alarm is for to set an alarm by seeing current time -->
+    <div class="Alarm">
+      <!-- ho is for hours in the time , Up_H() and Down_H() is to select the Hour -->
+      <div class="circle ho">
+        <span class="Up" onclick="Up_H()"></span>
+        <span class="Down" onclick="Down_H()"></span>
+        <div id="box1"></div>
+      </div>
+      <!--mi is for minutes in the time , Up_M() and Down_M() is to select the Minutes-->
+      <div class="circle mi">
+        <span class="Up" onclick="Up_M()"></span>
+        <span class="Down" onclick="Down_M()"></span>
+        <div id="box2"></div>
+      </div>
+      <!--se is for seconds in the time , Up_S() and Down_S() is to select the Seconds-->
+      <div class="circle se">
+        <span class="Up" onclick="Up_S()"></span>
+        <span class="Down" onclick="Down_S()"></span>
+        <div id="box3"></div>
+      </div>
+      <!-- functionalityOfAlarm() is to Set an alarm Or Delete an alarm-->
+      <span id="set" onclick="functionalityOfAlarm()">
+        <i class="icon ion-md-alarm"></i>
+      </span>
+    </div>
+    <!-- To show the alarms in a list -->
+    <div id="alarms"></div>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
