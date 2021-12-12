@@ -91,11 +91,14 @@ function functionalityOfAlarm(){
         // console.log(hour+""+min+""+sec);
         var currtimee = hour+""+min+""+sec;
         for(var j=0;j<arrOfAlarms.length;j++){
-            if(arrOfAlarms[j] == undefined) continue;
             if(arrOfAlarms[j]== currtimee){
-                alert('Its Time !!');
                 var chngcolor = document.getElementsByTagName('li');
-                chngcolor[j].style.color = 'Orange';
+                for(var k=0;k<chngcolor.length;k++){
+                    if(chngcolor[k].getAttribute('class') == listarr[j].getAttribute('class')){
+                    chngcolor[k].style.color = 'Orange';
+                    }
+                }
+                alert('Its Time !!');
             }
         }
     },1000);
