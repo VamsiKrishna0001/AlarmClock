@@ -94,6 +94,8 @@ function functionalityOfAlarm(){
             if(arrOfAlarms[j] == undefined) continue;
             if(arrOfAlarms[j]== currtimee){
                 alert('Its Time !!');
+                var chngcolor = document.getElementsByTagName('li');
+                chngcolor[j].style.color = 'Orange';
             }
         }
     },1000);
