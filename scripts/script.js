@@ -96,6 +96,7 @@ function functionalityOfAlarm(){
                 for(var k=0;k<chngcolor.length;k++){
                     if(chngcolor[k].getAttribute('class') == listarr[j].getAttribute('class')){
                     chngcolor[k].style.color = 'Orange';
+                    break;
                     }
                 }
                 alert('Its Time !!');
