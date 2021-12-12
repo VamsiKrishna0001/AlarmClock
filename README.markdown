@@ -15,10 +15,10 @@ You can visit the webpage [here](https://usernamezero.github.io/AlarmClock/)
 - Multiple Alarms can be set
 - Live Time can be seen
 - Delete an Alarm that is set
-- you can change the time settings using up and down arrows.
-- when you can hover on the alarm icon ,it shows green color as t to say it can set an alarm.
-- when you hover on the delete icon, it shows the red color as to say it can delete
-- After the alarm is happened it changes its color form initial
+- You can change the time settings using up and down arrows.
+- When you can hover(move mouse pointer) on the alarm icon ,it shows green color as t to say it can set an alarm.
+- When you hover(move mouse pointer) on the delete icon, it shows the red color as to say it can delete
+- The time that is set to an alarm is alarmed then it changes its color form initial
   red to orange.
 
 ## 🔗 Links
