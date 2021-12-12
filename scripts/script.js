@@ -92,13 +92,7 @@ function functionalityOfAlarm(){
         var currtimee = hour+""+min+""+sec;
         for(var j=0;j<arrOfAlarms.length;j++){
             if(arrOfAlarms[j]== currtimee){
-                var chngcolor = document.getElementsByTagName('li');
-                for(var k=0;k<chngcolor.length;k++){
-                    if(chngcolor[k].getAttribute('class') == listarr[j].getAttribute('class')){
-                    chngcolor[k].style.color = 'Orange';
-                    break;
-                    }
-                }
+                listarr[j].style.color = 'Orange';
                 alert('Its Time !!');
             }
         }
