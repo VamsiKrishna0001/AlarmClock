@@ -123,6 +123,7 @@ h1{
     background: linear-gradient(to right, #79818b, #8e9297); 
     background: -webkit-linear-gradient(to right, #758190, #8c929c);  
 }
+
 /* Placing the hands in the center of dial */
 .hand{
     grid-row: 2/7;
@@ -192,7 +193,6 @@ h1{
     border-radius: 80px;
     border:2px solid green;
     box-shadow: 8px -8px 4px rgb(0, 0, 0);
-
 }
 
 .circle:hover{
@@ -220,8 +220,7 @@ h1{
 .circle:hover .Up{
     top:20%;
     right: 30%;
-    opacity: 1;
-    
+    opacity: 1; 
 }
 
 /* Crearing Down for Moving numbers down */
